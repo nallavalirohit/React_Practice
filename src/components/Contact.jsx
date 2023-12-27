@@ -3,10 +3,11 @@ import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 const notify = () => {
     toast('📨 Message Sent!', {
-        position: "top-right",
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -15,6 +16,7 @@ const notify = () => {
         progress: undefined,
         theme: "dark",
         });
+        injectStyle();
 }
 
 const Contact = () => {
@@ -47,8 +49,9 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black p-4 text-white"
+      className="w-full bg-gradient-to-b from-gray-800 to-black p-4 text-white"
     >
+      <div className="spacer w-full">&#160;</div>
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
