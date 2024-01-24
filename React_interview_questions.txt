@@ -1,0 +1,18 @@
+How does React work internally ?
+What's the use of key property in React ?
+Why, What, How questions on useMemo & UseCallback
+Lifting the state up bole toh ? 
+Composition bole toh ? 
+Props drilling bole toh ?
+Conditioning rendering b t ?
+Controlled components b t ?
+Corner case questions  around useEffects
+What, why, how questions on Redux  & Context API ? Which is better? Why ? Why not ?
+Routing kaise karte ho ? Aur Testing ? Code coverage thresholds ?
+Questions on Bundling. Basics. 
+What is Tree shaking ?
+What is hydration & re-hydration ?
+
+More questions on Performance optimisation can be asked.
+
+Some companies also ask about CSR, SSR, what's the difference ? Which should be used when ? Give examples

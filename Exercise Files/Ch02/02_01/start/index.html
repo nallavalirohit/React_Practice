@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <!-- <h1>Getting Started with React</h1> -->
+    <div id="root"></div>
+    <script type="text/babel">
+      // let ul = 
+      // React.createElement("ul", {style:{color: "red"}}, 
+      // React.createElement("li", null, "Monday"),
+      // React.createElement("li", null, "Monday"),
+      // React.createElement("li", {style:{color: "green"}}, "Monday")
+      // )
+      // let var1 = "Monday";
+      // let var2 = "Tuesday";
+      // let var3 = "Wednesday";
+      // let name = "React";
+      function Header(props){
+        console.log(props);
+        return(
+          <header>
+          <h1>{props.name}'s Workshop</h1>
+        </header>
+        );
+      }
+      function Description(props){
+        return(
+          <section>
+            <img 
+            height={200}
+            src="D:\UI Dev\Ex_Files_React_js_EssT\Exercise Files\Ch02\02_02\start\LFC.jpg"
+            alt="Liverpool Football Club crest"
+            />
+            <ul>
+              {props.define.map((element) => (<li key={element.id}>{element.title}</li>))}
+            </ul>
+          </section>
+        );
+      }
+      function Footer(props){
+        return(
+          <footer>
+            <p>Copyright {props.footer}</p>
+            </footer>
+        );
+      }
+      const party =[
+        "Salmon and soup",
+        "Chicken",
+        "Ice Cream",
+        "Pizza"
+      ];
+      const partyObjects = party.map((element,i) => ({
+        id : i,
+        title : element
+      }));
+      function App(){
+        return(
+          <React.Fragment>
+            <Header name="Muffy"/>
+            <Description define={partyObjects}/>
+            <Footer footer={new Date().getFullYear()}/>
+          </React.Fragment>
+        );
+      }
+      ReactDOM.render(
+          <App />,
+        // <ul>
+        //   <li>{var1}</li>  
+        //   <li>{var2}</li>  
+        //   <li>{var3}</li>  
+        //   <li>{name.toUpperCase()}</li>  
+        //   <li>{name.length}</li>  
+        // </ul>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

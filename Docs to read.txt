@@ -1,0 +1,9 @@
+Links to Read:
+
+ESLint: https://eslint.org/docs/latest/use/core-concepts
+Parcel: https://parceljs.org/languages/javascript/#usage-with-other-tools
+Jest: https://jestjs.io/docs/getting-started
+Redux: https://redux.js.org/tutorials/fundamentals/part-1-overview
+Immer : https://immerjs.github.io/immer/
+
+Read about jsDom
