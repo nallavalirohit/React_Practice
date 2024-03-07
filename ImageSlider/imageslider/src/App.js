@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>Image Slidaaaa</h1>
       <div style={containerStyles}>
-        <ImageSlider slides={slides}/>
+        <ImageSlider slides={slides} parentWidth={500}/>
       </div>
     </div>
   );
